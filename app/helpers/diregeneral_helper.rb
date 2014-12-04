@@ -1,0 +1,2 @@
+module DiregeneralHelper
+end

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<body>
+ 
+<section id="intro" class="intro">
+    <div class="container">
+    <div class="jumbotron" id="jumbo">
+      <h1>Calidad y Estadistica</h1>
+  </div>
+  </div>
+  <div class="container">
+    <h1>Coordinador del Departamento </h1>
+<table style="width:100%">
+    <tr>
+      <th>  <strong>Nombre:</strong> </th>
+      <th>  <strong>Puesto:</strong> </th>
+       <th>  <strong>Telefono:</strong> </th>
+      <th>  <strong>Correo:</strong> </th>
+       
+      </tr>
+    
+    <%@usercordi.each do |user| %>
+     <tr>
+       <td><%= user.name %></td>
+       <td><%= user.puesto %></td>
+       <td><%= user.ext %></td>
+       <td><%= user.email %></td>
+       
+    </tr>
+    <% end %>
+</table>
+    
+  <h1> Empleados del Departamento </h1>
+  <table style="width:100%">
+    <tr>
+      <th> Nombre: </th>
+      <th> Puesto: </th>
+       <th> Telefono: </th>
+      <th> Correo: </th>
+       
+      </tr>
+    
+    <% @usersemple.each do |user| %>
+     <tr>
+       <td><%= user.name %></td>
+       <td><%= user.puesto %></td>
+       <td><%= user.ext %></td>
+       <td><%= user.email %></td>
+       
+    </tr>
+    <% end %>
+</table>
+    
+  </section>
+<footer class="footer">
+ <p>© Departamento Sistemas Area de Desarrollo 2014</p>
+</footer>
+  </body>
+</html>
